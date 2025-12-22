@@ -4,7 +4,7 @@
 
 // Default branding configuration
 const DEFAULT_BRANDING = {
-    title: "Tournament Pro",
+    title: "Tournament",
     subtitle: "Gestionnaire de Tournoi",
     logo: null,
     colors: {
@@ -19,7 +19,7 @@ const DEFAULT_BRANDING = {
 // Preset themes
 const PRESET_THEMES = {
     sport: {
-        title: "Tournament Pro",
+        title: "Tournament",
         subtitle: "Gestionnaire de Tournoi",
         colors: {
             primary: "#FF2E63",
