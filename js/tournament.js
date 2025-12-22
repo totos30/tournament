@@ -145,6 +145,9 @@
                 
                 listDiv.appendChild(itemDiv);
             });
+
+                //Mandatory to check if all byes players are properly sets
+		updateByeSelectionUI()
         }
 
         function toggleByeSelection(playerId) {
@@ -986,3 +989,4 @@
             };
             reader.readAsText(file);
         }
+
