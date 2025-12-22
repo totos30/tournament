@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestionnaire de Tournoi</title>
-    <link rel="stylesheet" href="./tournament.css">
+    <link rel="stylesheet" href="./css/tournament.css">
+	<link rel="stylesheet" href="./css/branding.css">
 </head>
 <body>
 
     <div class="container">
         <header>
-            <h1>⚡ Tournament Pro ⚡</h1>
+            <h1>⚡ Tournament ⚡</h1>
             <div class="subtitle">Gestionnaire de Tournoi</div>
         </header>
 
@@ -27,8 +28,6 @@
                 <label for="playerCount">Nombre de joueurs (pair, max 20)</label>
                 <select id="playerCount">
                     <option value="">Sélectionner...</option>
-                    <option value="2">2 joueurs</option>
-                    <option value="4">4 joueurs</option>
                     <option value="6">6 joueurs</option>
                     <option value="8">8 joueurs</option>
                     <option value="10">10 joueurs</option>
@@ -37,6 +36,16 @@
                     <option value="16">16 joueurs</option>
                     <option value="18">18 joueurs</option>
                     <option value="20">20 joueurs</option>
+					<option value="22">22 joueurs</option>
+					<option value="24">24 joueurs</option>
+					<option value="26">26 joueurs</option>
+					<option value="28">28 joueurs</option>
+					<option value="30">30 joueurs</option>
+					<option value="32">32 joueurs</option>
+					<option value="34">34 joueurs</option>
+					<option value="36">36 joueurs</option>
+					<option value="38">38 joueurs</option>
+					<option value="40">40 joueurs</option>
                 </select>
             </div>
 
@@ -104,7 +113,156 @@
             </div>
         </div>
     </div>
-<script src="./tournament.js"></script>
+<script src="./js/tournament.js"></script>
+<script src="./js/branding.js"></script>
+
+<!-- Settings Button (to add in header or body) -->
+<button class="settings-button" onclick="openSettings()">
+    ⚙️ Personnaliser
+</button>
+
+<!-- Settings Overlay -->
+<div id="settingsOverlay" class="settings-overlay">
+    <div class="settings-panel">
+        <!-- Header -->
+        <div class="settings-header">
+            <h2>⚙️ Personnalisation</h2>
+            <button class="close-settings" onclick="closeSettings()">✕</button>
+        </div>
+
+        <!-- Section 1: Identity -->
+        <div class="settings-section">
+            <h3>📝 Identité</h3>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="brandTitle">Titre principal</label>
+                    <input type="text" id="brandTitle" placeholder="Tournament" value="Tournament">
+                </div>
+                <div class="setting-item">
+                    <label for="brandSubtitle">Sous-titre</label>
+                    <input type="text" id="brandSubtitle" placeholder="Gestionnaire de Tournoi" value="Gestionnaire de Tournoi">
+                </div>
+            </div>
+            
+            <!-- Logo Upload -->
+            <div class="setting-item" style="margin-top: 1rem;">
+                <label>Logo (optionnel)</label>
+                <div class="logo-upload-area" id="logoUploadArea" onclick="document.getElementById('logoInput').click()">
+                    <img id="logoPreview" class="logo-preview" alt="Logo">
+                    <div id="logoUploadText">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📤</div>
+                        <div style="font-weight: 600;">Cliquez pour uploader un logo</div>
+                        <div style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.3rem;">PNG, JPG, SVG (max 2MB)</div>
+                    </div>
+                    <input type="file" id="logoInput" accept="image/*" onchange="handleLogoUpload(event)">
+                </div>
+                <div class="logo-actions" id="logoActions">
+                    <button onclick="document.getElementById('logoInput').click()" style="background: rgba(8, 217, 214, 0.2);">Changer</button>
+                    <button onclick="removeLogo()" class="btn-reset">Supprimer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Theme Colors -->
+        <div class="settings-section">
+            <h3>🎨 Couleurs du thème</h3>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="colorPrimary">Couleur principale</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorPrimary" value="#FF2E63" onchange="updateColorText('colorPrimary', 'colorPrimaryText')">
+                        <input type="text" id="colorPrimaryText" value="#FF2E63" maxlength="7" onchange="updateColorPicker('colorPrimaryText', 'colorPrimary')">
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="colorSecondary">Couleur secondaire</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorSecondary" value="#08D9D6" onchange="updateColorText('colorSecondary', 'colorSecondaryText')">
+                        <input type="text" id="colorSecondaryText" value="#08D9D6" maxlength="7" onchange="updateColorPicker('colorSecondaryText', 'colorSecondary')">
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="colorAccent">Couleur accent</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorAccent" value="#FFD23F" onchange="updateColorText('colorAccent', 'colorAccentText')">
+                        <input type="text" id="colorAccentText" value="#FFD23F" maxlength="7" onchange="updateColorPicker('colorAccentText', 'colorAccent')">
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="colorDark">Fond sombre</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorDark" value="#252A34" onchange="updateColorText('colorDark', 'colorDarkText')">
+                        <input type="text" id="colorDarkText" value="#252A34" maxlength="7" onchange="updateColorPicker('colorDarkText', 'colorDark')">
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label for="colorLight">Texte clair</label>
+                    <div class="color-picker-wrapper">
+                        <input type="color" id="colorLight" value="#EAEAEA" onchange="updateColorText('colorLight', 'colorLightText')">
+                        <input type="text" id="colorLightText" value="#EAEAEA" maxlength="7" onchange="updateColorPicker('colorLightText', 'colorLight')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Preset Themes -->
+        <div class="settings-section">
+            <h3>✨ Thèmes prédéfinis</h3>
+            <div class="preset-themes">
+                <div class="preset-theme sport" onclick="applyPresetTheme('sport')">
+                    <span>🏀 Sport</span>
+                </div>
+                <div class="preset-theme esport" onclick="applyPresetTheme('esport')">
+                    <span>🎮 E-Sport</span>
+                </div>
+                <div class="preset-theme corporate" onclick="applyPresetTheme('corporate')">
+                    <span>🏢 Corporate</span>
+                </div>
+                <div class="preset-theme gaming" onclick="applyPresetTheme('gaming')">
+                    <span>🎲 Gaming</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Preview -->
+        <div class="settings-section">
+            <h3>👁️ Aperçu</h3>
+            <div class="branding-preview">
+                <div class="preview-header">
+                    <img id="previewLogo" class="preview-logo" alt="Logo">
+                    <div class="preview-title" id="previewTitle">Tournament</div>
+                    <div class="preview-subtitle" id="previewSubtitle">Gestionnaire de Tournoi</div>
+                </div>
+                <div class="preview-matches">
+                    <div class="preview-match">
+                        <div class="preview-player winner">Joueur 1 ✓</div>
+                        <div style="text-align: center; font-size: 0.7rem; opacity: 0.5; margin: 0.3rem 0;">VS</div>
+                        <div class="preview-player" style="opacity: 0.4;">Joueur 2</div>
+                    </div>
+                    <div class="preview-match">
+                        <div class="preview-player active">Joueur 3</div>
+                        <div style="text-align: center; font-size: 0.7rem; opacity: 0.5; margin: 0.3rem 0;">VS</div>
+                        <div class="preview-player active">Joueur 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="settings-actions">
+            <button onclick="saveBranding()" style="background: linear-gradient(135deg, var(--primary), #d91e50);">
+                💾 Enregistrer
+            </button>
+            <button onclick="resetBranding()" class="btn-reset">
+                🔄 Réinitialiser
+            </button>
+            <button onclick="closeSettings()" style="background: rgba(255, 255, 255, 0.1);">
+                Annuler
+            </button>
+        </div>
+    </div>
+</div>
     
+	
 </body>
 </html>
