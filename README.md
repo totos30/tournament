@@ -141,6 +141,18 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 - Soumettre des Pull Requests
 - Partager vos cas d'usage
 
+## 💬 Feedback & Feature Requests
+
+Vous utilisez Tournament et vous avez des idées ?
+
+📮 [Proposer une fonctionnalité](https://github.com/totos30/tournament/issues/new)
+📧 Contact : etiennem30@gmail.com
+
+**Avant de proposer, décrivez :**
+- Votre cas d'usage (tournoi de quel type ?)
+- Le problème que vous rencontrez
+- Comment cette feature aiderait
+
 ## 📜 Licence
 
 MIT License - Libre d'utilisation, de modification et de distribution.
