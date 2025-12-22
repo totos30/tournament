@@ -42,13 +42,13 @@ Aucune installation nécessaire ! Il suffit de télécharger les fichiers et de 
 
 ```bash
 # Télécharger le fichier
-wget https://totos30.github.io/tournament/tournament.html
+https://github.com/totos30/tournament/archive/refs/heads/main.zip
 
 # Ouvrir dans votre navigateur
-open tournament.html  # macOS
-start tournament.html # Windows
-xdg-open tournament.html # Linux
+https://totos30.github.io/tournament/tournament.html
+
 ```
+
 
 ### Utilisation basique
 
