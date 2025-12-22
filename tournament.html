@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tournoi</title>
+    <link rel="stylesheet" href="./tournament.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>⚡ Tournament Pro ⚡</h1>
+            <div class="subtitle">Gestionnaire de Tournoi</div>
+        </header>
+
+        <!-- Setup Phase -->
+        <div id="setupPhase" class="setup-container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <button onclick="document.getElementById('importFile').click()" style="background: linear-gradient(135deg, var(--secondary), #06b8b5);">
+                    📤 Importer un tournoi
+                </button>
+                <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importTournament(event)">
+            </div>
+            
+            <div class="form-group">
+                <label for="playerCount">Nombre de joueurs (pair, max 20)</label>
+                <select id="playerCount">
+                    <option value="">Sélectionner...</option>
+                    <option value="2">2 joueurs</option>
+                    <option value="4">4 joueurs</option>
+                    <option value="6">6 joueurs</option>
+                    <option value="8">8 joueurs</option>
+                    <option value="10">10 joueurs</option>
+                    <option value="12">12 joueurs</option>
+                    <option value="14">14 joueurs</option>
+                    <option value="16">16 joueurs</option>
+                    <option value="18">18 joueurs</option>
+                    <option value="20">20 joueurs</option>
+                </select>
+            </div>
+
+            <div id="playersInputContainer" style="display: none;">
+                <div class="form-group">
+                    <label>Noms des joueurs</label>
+                    <div id="playersInput" class="players-input"></div>
+                </div>
+                <button id="continueToByeSelection" onclick="continueToByeSelection()">Continuer</button>
+            </div>
+        </div>
+
+        <!-- Bye Selection Phase -->
+        <div id="byeSelectionPhase" class="setup-container" style="display: none;">
+            <div class="form-group">
+                <label id="byeSelectionTitle">Sélection des Byes</label>
+                <p id="byeSelectionInfo" style="color: var(--secondary); font-size: 1.1rem; margin-bottom: 1.5rem;"></p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <button onclick="randomByeSelection()" style="background: linear-gradient(135deg, var(--secondary), #06b8b5); margin-right: 1rem;">
+                        🎲 Sélection Aléatoire
+                    </button>
+                    <button onclick="clearByeSelection()" class="reset-btn" style="background: rgba(255, 255, 255, 0.1);">
+                        ✕ Tout désélectionner
+                    </button>
+                </div>
+
+                <div id="byePlayersList" class="bye-players-list"></div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <button onclick="backToPlayerInput()" class="reset-btn" style="flex: 1;">← Retour</button>
+                <button id="startTournamentBtn" onclick="startTournament()" style="flex: 2;">Lancer le Tournoi</button>
+            </div>
+        </div>
+
+        <!-- Tournament Phase -->
+        <div id="tournamentPhase" class="tournament-container">
+            <div class="tournament-header">
+                <h2>Tournoi en cours</h2>
+                <div style="display: flex; gap: 1rem;">
+                    <button class="reset-btn" onclick="exportTournament()">📥 Exporter</button>
+                    <button class="reset-btn" onclick="resetTournament()">Nouveau Tournoi</button>
+                </div>
+            </div>
+
+            <div id="winnerDisplay" class="winner-display">
+                <div class="trophy">🏆</div>
+                <h2>Podium du Tournoi</h2>
+                <div class="champion-name" id="championName"></div>
+            </div>
+
+            <div id="bracket" class="bracket"></div>
+            
+            <div id="focusIndicator" class="focus-indicator">
+                ⚡ MATCH EN COURS ⚡
+            </div>
+            
+            <div id="keyboardHint" class="keyboard-hint" style="display: none;">
+                <span class="hint-icon">👁️</span>
+                <div class="hint-content">
+                    <kbd>Z</kbd> Focus sur le match en cours
+                    <span style="margin: 0 1rem;">•</span>
+                    <kbd>Echap</kbd> Vue globale
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./tournament.js"></script>
+    
+</body>
+</html>
