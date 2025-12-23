@@ -30,11 +30,11 @@
                 div.className = 'player-input-group';
                 div.innerHTML = `
                     <span class="player-number">#${i}</span>
-                    <input type="text" id="player${i}" placeholder="Nom du joueur ${i}" required>
+                    <input type="text" id="player${i}" placeholder="${t('setup.playerName')} ${i}" required>
                     <div class="photo-upload-container">
                         <label for="photo${i}" class="photo-upload-label">
                             <span class="photo-icon">📷</span>
-                            <span class="photo-text">Photo (optionnel)</span>
+                            <span class="photo-text">${t('setup.photoOptional')}</span>
                         </label>
                         <input type="file" id="photo${i}" class="photo-input" accept="image/*">
                         <div id="preview${i}" class="photo-preview"></div>
@@ -76,7 +76,7 @@
             for (let i = 1; i <= count; i++) {
                 const name = document.getElementById(`player${i}`).value.trim();
                 if (!name) {
-                    alert(`Veuillez entrer le nom du joueur ${i}`);
+                    alert(t('alert.enterPlayerName', { number: i }));
                     return;
                 }
                 
@@ -116,9 +116,10 @@
             document.getElementById('byeSelectionPhase').style.display = 'block';
             
             // Update info text
-            document.getElementById('byeSelectionInfo').textContent = 
-                `Sélectionnez ${numByesNeeded} joueur${numByesNeeded > 1 ? 's' : ''} qui ${numByesNeeded > 1 ? 'seront qualifiés' : 'sera qualifié'} d'office au Round 2 (têtes de série)`;
-            
+            const byeInfo = document.getElementById('byeSelectionInfo');
+			byeInfo.setAttribute('data-i18n-count', numByesNeeded);
+			byeInfo.textContent = t('bye.info', { count: numByesNeeded });
+			
             // Reset selection
             selectedByes.clear();
             
@@ -159,7 +160,7 @@
                 if (selectedByes.size < numByesNeeded) {
                     selectedByes.add(playerId);
                 } else {
-                    alert(`Vous ne pouvez sélectionner que ${numByesNeeded} joueur${numByesNeeded > 1 ? 's' : ''}`);
+                    alert(t('bye.limitReached', { count: numByesNeeded }));
                     return;
                 }
             }
@@ -372,7 +373,8 @@
                 
                 const finalTitle = document.createElement('div');
                 finalTitle.className = 'round-title';
-                finalTitle.textContent = 'FINALE';
+                //finalTitle.textContent = 'FINALE';
+				finalTitle.textContent = t('tournament.final');
                 finalDiv.appendChild(finalTitle);
                 
                 finalRound.forEach((match, matchIndex) => {
@@ -424,7 +426,9 @@
             
             const semiTitle = document.createElement('div');
             semiTitle.className = 'round-title';
-            semiTitle.textContent = 'DEMI-FINALES';
+			
+			//semiTitle.textContent = 'DEMI-FINALES';
+            semiTitle.textContent = t('tournament.semiFinals');
             semiDiv.appendChild(semiTitle);
             
             semiRound.forEach((match, matchIndex) => {
@@ -442,7 +446,9 @@
                 const thirdPlaceTitle = document.createElement('div');
                 thirdPlaceTitle.className = 'round-title';
                 thirdPlaceTitle.style.color = '#FFD23F';
-                thirdPlaceTitle.textContent = '3ÈME PLACE';
+                //thirdPlaceTitle.textContent = '3ÈME PLACE';
+				thirdPlaceTitle.textContent = t('tournament.thirdPlace');
+				
                 thirdPlaceDiv.appendChild(thirdPlaceTitle);
                 
                 const matchDiv = createMatchElement(thirdPlaceMatch, -1, -1, true);
@@ -458,7 +464,8 @@
             
             const finalTitle = document.createElement('div');
             finalTitle.className = 'round-title';
-            finalTitle.textContent = 'FINALE';
+            //finalTitle.textContent = 'FINALE';
+			finalTitle.textContent = t('tournament.final');
             finalDiv.appendChild(finalTitle);
             
             finalRound.forEach((match, matchIndex) => {

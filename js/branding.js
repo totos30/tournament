@@ -4,8 +4,8 @@
 
 // Default branding configuration
 const DEFAULT_BRANDING = {
-    title: "Tournament",
-    subtitle: "Gestionnaire de Tournoi",
+    title: t('theme.sport.title'),//"Tournament",
+    subtitle: t('theme.sport.subtitle'),//"Gestionnaire de Tournoi",
     logo: null,
     colors: {
         primary: "#FF2E63",
@@ -19,8 +19,8 @@ const DEFAULT_BRANDING = {
 // Preset themes
 const PRESET_THEMES = {
     sport: {
-        title: "Tournament",
-        subtitle: "Gestionnaire de Tournoi",
+        title: t('theme.sport.title'),//"Tournament",
+        subtitle: t('theme.sport.subtitle'),//"Gestionnaire de Tournoi",
         colors: {
             primary: "#FF2E63",
             secondary: "#08D9D6",
@@ -30,8 +30,8 @@ const PRESET_THEMES = {
         }
     },
     esport: {
-        title: "E-Sport Arena",
-        subtitle: "Championship Bracket",
+        title:t('theme.esport.title'), //"E-Sport Arena",
+        subtitle: t('theme.esport.subtitle'),//"Championship Bracket",
         colors: {
             primary: "#7B2CBF",
             secondary: "#00F5FF",
@@ -41,8 +41,8 @@ const PRESET_THEMES = {
         }
     },
     corporate: {
-        title: "Corporate Challenge",
-        subtitle: "Team Competition",
+        title: t('theme.corporate.title'),//"Corporate Challenge",
+        subtitle: t('theme.corporate.subtitle'),//"Team Competition",
         colors: {
             primary: "#2C3E50",
             secondary: "#3498DB",
@@ -52,8 +52,8 @@ const PRESET_THEMES = {
         }
     },
     gaming: {
-        title: "Gaming Tournament",
-        subtitle: "Battle for Glory",
+        title: t('theme.gaming.title'),//"Gaming Tournament",
+        subtitle: t('theme.gaming.subtitle'),//"Battle for Glory",
         colors: {
             primary: "#FF6B35",
             secondary: "#F7931E",
