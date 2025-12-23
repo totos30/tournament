@@ -4,7 +4,7 @@ Tous les changements notables de Tournament sont documentés dans ce fichier.
 
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
----
+
 
 ## [1.0.0] - 2025-01-17
 
@@ -88,7 +88,8 @@ Gestionnaire de tournoi professionnel complet, prêt pour une utilisation en pro
 - ✅ Activation auto après sélection byes (manuelle ou aléatoire)
 - ✅ Désactivation auto du mode focus quand tournoi terminé
 
----
+
+
 
 ## 📊 Métriques
 
@@ -101,7 +102,8 @@ Gestionnaire de tournoi professionnel complet, prêt pour une utilisation en pro
 - **Langues** : 2 (Anglais, Français)
 - **Joueurs supportés** : 2-40
 
----
+
+
 
 ## 🔮 Idées futures
 
@@ -117,11 +119,12 @@ Gestionnaire de tournoi professionnel complet, prêt pour une utilisation en pro
 ### Backlog
 Idées notées pour évaluation future selon les demandes utilisateurs.
 
----
+
+
 
 ## 🙏 Remerciements
 
-Merci à tous les utilisateurs qui testeront et fourniront des retours pour améliorer Tournament Pro !
+Merci à tous les utilisateurs qui testeront et fourniront des retours pour améliorer Tournament !
 
 ---
 
