@@ -30,6 +30,12 @@ function changeLandingLanguage(lang) {
     localStorage.setItem('landingLanguage', lang);
     document.documentElement.lang = lang;
     updateLanguage();
+
+    // Clear ALL doc contents to force reload
+    document.getElementById('readme-content').innerHTML = '<div class="loading">Loading...</div>';
+    document.getElementById('guide-content').innerHTML = '<div class="loading">Loading...</div>';
+    document.getElementById('changelog-content').innerHTML = '<div class="loading">Loading...</div>';
+    
     
     // Force reload of currently visible doc
     loadDocs();
