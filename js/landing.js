@@ -32,20 +32,7 @@ function changeLandingLanguage(lang) {
     updateLanguage();
     
     // Force reload of currently visible doc
-    const activeTab = document.querySelector('.docs-tab.active');
-    if (activeTab) {
-        const tabName = activeTab.onclick.toString().match(/showDocTab\('(\w+)'\)/)?.[1];
-        if (tabName) {
-            // Clear the content to force reload
-            const contentDiv = document.getElementById(`${tabName}-content`);
-            if (contentDiv) {
-                contentDiv.innerHTML = '<div class="loading">Loading...</div>';
-            }
-            // Reload the doc
-            loadDoc(tabName);
-        }
-    }
-    //loadDocs();
+    loadDocs();
 }
 
 // Update all text based on current language
