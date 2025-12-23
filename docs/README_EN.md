@@ -4,9 +4,6 @@
 
 Tournament is a standalone web application that allows you to organize and track sports or esports tournaments with a modern and intuitive interface. 100% local, no server required, no data collected.
 
-![Tournament](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![No Server Required](https://img.shields.io/badge/server-none-orange)
 
 ## ✨ Key Features
 
