@@ -12,7 +12,8 @@
 
 💡 **Astuce** : Les photos rendent le tournoi plus vivant et créent un effet visuel amusant (rotation des photos des perdants) !
 
----
+
+
 
 ### Étape 2️⃣ : Gestion des têtes de série (si applicable)
 
@@ -30,7 +31,8 @@ Une fois vos choix faits, cliquez sur **"Lancer le Tournoi"**
 
 💡 **Astuce** : Dans les tournois professionnels, les byes sont donnés aux meilleurs joueurs pour récompenser leur classement.
 
----
+
+
 
 ### Étape 3️⃣ : Jouer le tournoi
 
@@ -44,7 +46,8 @@ Une fois vos choix faits, cliquez sur **"Lancer le Tournoi"**
 
 💡 **Astuce** : Le match de 3ème place est joué AVANT la finale, comme dans les compétitions officielles.
 
----
+
+
 
 ## 💾 Sauvegarder et reprendre un tournoi
 
@@ -72,7 +75,8 @@ Une fois vos choix faits, cliquez sur **"Lancer le Tournoi"**
 
 💡 **Astuce** : Le fichier JSON est lisible et peut être partagé par email, WhatsApp, etc.
 
----
+
+
 
 ## ⌨️ Raccourcis clavier
 
@@ -83,7 +87,8 @@ Une fois vos choix faits, cliquez sur **"Lancer le Tournoi"**
 
 Le menu 👁️ en bas à droite vous rappelle ces raccourcis (survolez-le pour voir le détail).
 
----
+
+
 
 ## 🎨 Personnalisation
 
@@ -96,13 +101,15 @@ Cliquez sur **"⚙️ Personnaliser"** pour :
 
 Votre personnalisation est sauvegardée et persiste entre les sessions.
 
----
+
+
 
 ## 🌐 Langue
 
 Cliquez sur le sélecteur de langue (🇬🇧 EN / 🇫🇷 FR) en haut à droite pour changer la langue de l'interface.
 
----
+
+
 
 ## ❓ FAQ Rapide
 
@@ -121,6 +128,7 @@ R : Non, c'est juste un fichier HTML à ouvrir dans votre navigateur.
 **Q : Ça fonctionne sans Internet ?**
 R : Oui ! Une fois le fichier téléchargé, tout fonctionne hors ligne.
 
----
+
+
 
 **Bon tournoi ! 🏆**
