@@ -12,7 +12,8 @@
 
 💡 **Tip**: Photos make the tournament more lively and create a fun visual effect (losing players' photos rotate)!
 
----
+
+
 
 ### Step 2️⃣: Managing Seeded Players (if applicable)
 
@@ -30,7 +31,8 @@ Once your choices are made, click **"Start Tournament"**
 
 💡 **Tip**: In professional tournaments, byes are given to the best players to reward their ranking.
 
----
+
+
 
 ### Step 3️⃣: Playing the Tournament
 
@@ -44,7 +46,8 @@ Once your choices are made, click **"Start Tournament"**
 
 💡 **Tip**: The third-place match is played BEFORE the final, as in official competitions.
 
----
+
+
 
 ## 💾 Save and Resume a Tournament
 
@@ -72,7 +75,8 @@ At any time during the tournament:
 
 💡 **Tip**: The JSON file is readable and can be shared via email, WhatsApp, etc.
 
----
+
+
 
 ## ⌨️ Keyboard Shortcuts
 
@@ -83,7 +87,8 @@ At any time during the tournament:
 
 The 👁️ menu at the bottom right reminds you of these shortcuts (hover over it to see details).
 
----
+
+
 
 ## 🎨 Customization
 
@@ -96,13 +101,15 @@ Click **"⚙️ Customize"** to:
 
 Your customization is saved and persists between sessions.
 
----
+
+
 
 ## 🌐 Language
 
 Click the language selector (🇬🇧 EN / 🇫🇷 FR) in the top right to change the interface language.
 
----
+
+
 
 ## ❓ Quick FAQ
 
@@ -121,6 +128,7 @@ A: No, it's just an HTML file to open in your browser.
 **Q: Does it work without Internet?**
 A: Yes! Once the file is downloaded, everything works offline.
 
----
+
+
 
 **Have a great tournament! 🏆**
