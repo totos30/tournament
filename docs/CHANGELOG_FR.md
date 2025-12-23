@@ -126,6 +126,6 @@ Idées notées pour évaluation future selon les demandes utilisateurs.
 
 Merci à tous les utilisateurs qui testeront et fourniront des retours pour améliorer Tournament !
 
----
+
 
 **Vous voulez une fonctionnalité ? Ouvrez une issue sur GitHub !**
