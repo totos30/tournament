@@ -124,7 +124,7 @@ Ideas logged for future evaluation based on user requests.
 
 ## 🙏 Acknowledgments
 
-Thanks to all users who will test and provide feedback to improve Tournament Pro!
+Thanks to all users who will test and provide feedback to improve Tournament !
 
 ---
 
