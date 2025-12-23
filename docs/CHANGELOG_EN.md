@@ -4,7 +4,7 @@ All notable changes to Tournament will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
----
+
 
 ## [1.0.0] - 2025-01-17
 
@@ -88,7 +88,8 @@ Complete professional tournament manager, ready for production use.
 - ✅ Auto-enable after bye selection (manual or random)
 - ✅ Auto-disable focus mode when tournament ends
 
----
+
+
 
 ## 📊 Metrics
 
@@ -101,7 +102,8 @@ Complete professional tournament manager, ready for production use.
 - **Languages**: 2 (English, French)
 - **Supported Players**: 2-40
 
----
+
+
 
 ## 🔮 Future Ideas
 
@@ -117,7 +119,8 @@ Complete professional tournament manager, ready for production use.
 ### Backlog
 Ideas logged for future evaluation based on user requests.
 
----
+
+
 
 ## 🙏 Acknowledgments
 
