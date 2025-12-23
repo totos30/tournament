@@ -1,6 +1,6 @@
 # ⚡ Tournament
 
-**Gestionnaire de tournoi à élimination directe professionnel, gratuit et open-source**
+**Gestionnaire de tournoi à élimination directe professionnel, gratuit et open-source** 
 
 Tournament est une application web autonome qui permet d'organiser et de suivre des tournois sportifs ou e-sport avec une interface moderne et intuitive. 100% local, aucun serveur requis, aucune donnée collectée.
 
