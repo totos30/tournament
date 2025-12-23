@@ -6,7 +6,7 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 
 
-## [1.0.0] - 2025-01-17
+## [1.0.0] - 23-12-2025
 
 ### 🎉 Version Initiale - Tournament v1.0
 
