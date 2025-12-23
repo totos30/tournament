@@ -1,6 +1,6 @@
 # ⚡ Tournament
 
-**Professional single-elimination tournament manager, free and open-source**
+**Professional single-elimination tournament manager, free and open-source** 
 
 Tournament is a standalone web application that allows you to organize and track sports or esports tournaments with a modern and intuitive interface. 100% local, no server required, no data collected.
 
