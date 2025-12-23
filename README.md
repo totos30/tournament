@@ -119,7 +119,7 @@ xdg-open app.html # Linux
 ## 🤝 Contribution
 
 Contributions are welcome! Feel free to:
-- [Report bugs & propose improvements via Issues :](https://github.com/totos30/tournament/issues/new)
+- [Report bugs & propose improvements via Issues](https://github.com/totos30/tournament/issues/new)
 - Submit Pull Requests
 - Share your use cases
 
@@ -263,7 +263,7 @@ xdg-open app.html # Linux
 ## 🤝 Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à :
-- [Signaler des bugs via les Issues & proposer des améliorations via Issues :](https://github.com/totos30/tournament/issues/new)
+- [Signaler des bugs via les Issues & proposer des améliorations via Issues](https://github.com/totos30/tournament/issues/new)
 - Soumettre des Pull Requests
 - Partager vos cas d'usage
 
