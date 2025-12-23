@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Pro - Professional Tournament Manager</title>
+    <meta name="description" content="Free, open-source tournament manager. Single-elimination brackets, photo uploads, export/import, and complete customization.">
+    <link rel="stylesheet" href="./css/landing.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>⚡ Tournament Pro</h1>
+            </div>
+            <div class="nav-links">
+                <select id="langSelector" class="lang-selector" onchange="changeLandingLanguage(this.value)">
+                    <option value="en">🇬🇧 English</option>
+                    <option value="fr">🇫🇷 Français</option>
+                </select>
+                <a href="./app.html" class="btn-launch">Launch App →</a>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <h2 class="hero-title" data-lang-en="Professional Tournament Manager" data-lang-fr="Gestionnaire de Tournoi Professionnel">
+                Professional Tournament Manager
+            </h2>
+            <p class="hero-subtitle" data-lang-en="Free, open-source, and 100% local. Create perfect single-elimination brackets in minutes." data-lang-fr="Gratuit, open-source et 100% local. Créez des brackets à élimination directe parfaits en quelques minutes.">
+                Free, open-source, and 100% local. Create perfect single-elimination brackets in minutes.
+            </p>
+            <div class="hero-actions">
+                <a href="./app.html" class="btn-primary">
+                    <span data-lang-en="Start Now" data-lang-fr="Commencer Maintenant">Start Now</span> ⚡
+                </a>
+                <a href="https://github.com/yourusername/tournament-pro" class="btn-secondary" target="_blank">
+                    <span data-lang-en="View on GitHub" data-lang-fr="Voir sur GitHub">View on GitHub</span> →
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="bracket-preview">
+                <div class="bracket-line"></div>
+                <div class="bracket-line"></div>
+                <div class="bracket-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title" data-lang-en="Everything you need" data-lang-fr="Tout ce dont vous avez besoin">
+                Everything you need
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 data-lang-en="Professional Brackets" data-lang-fr="Brackets Professionnels">Professional Brackets</h3>
+                    <p data-lang-en="NCAA-style symmetric layout, automatic bye management, and third-place match." data-lang-fr="Layout symétrique style NCAA, gestion automatique des byes et match de 3ème place.">
+                        NCAA-style symmetric layout, automatic bye management, and third-place match.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 data-lang-en="Photo Upload" data-lang-fr="Upload de Photos">Photo Upload</h3>
+                    <p data-lang-en="Add player photos with visual effects. Losing players' photos rotate 180°!" data-lang-fr="Ajoutez des photos de joueurs avec effets visuels. Les photos des perdants tournent de 180° !">
+                        Add player photos with visual effects. Losing players' photos rotate 180°!
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3 data-lang-en="Export/Import" data-lang-fr="Export/Import">Export/Import</h3>
+                    <p data-lang-en="Save tournaments as JSON files. Resume anytime or share with others." data-lang-fr="Sauvegardez les tournois en fichiers JSON. Reprenez à tout moment ou partagez.">
+                        Save tournaments as JSON files. Resume anytime or share with others.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-lang-en="Full Customization" data-lang-fr="Personnalisation Complète">Full Customization</h3>
+                    <p data-lang-en="Visual color pickers, logo upload, and preset themes. No code needed!" data-lang-fr="Color pickers visuels, upload de logo et thèmes prédéfinis. Aucun code requis !">
+                        Visual color pickers, logo upload, and preset themes. No code needed!
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-lang-en="100% Private" data-lang-fr="100% Privé">100% Private</h3>
+                    <p data-lang-en="Everything runs locally. No server, no data collection, no account needed." data-lang-fr="Tout fonctionne localement. Pas de serveur, pas de collecte de données, pas de compte requis.">
+                        Everything runs locally. No server, no data collection, no account needed.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-lang-en="Focus Mode" data-lang-fr="Mode Focus">Focus Mode</h3>
+                    <p data-lang-en="Auto-focus on current match with keyboard shortcuts (Z/Escape)." data-lang-fr="Focus automatique sur le match en cours avec raccourcis clavier (Z/Echap).">
+                        Auto-focus on current match with keyboard shortcuts (Z/Escape).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Navigation -->
+    <section class="docs-section">
+        <div class="container">
+            <div class="docs-nav">
+                <button class="docs-tab active" onclick="showDocTab('readme')" data-lang-en="Documentation" data-lang-fr="Documentation">
+                    Documentation
+                </button>
+                <button class="docs-tab" onclick="showDocTab('guide')" data-lang-en="User Guide" data-lang-fr="Guide Utilisateur">
+                    User Guide
+                </button>
+                <button class="docs-tab" onclick="showDocTab('changelog')" data-lang-en="Changelog" data-lang-fr="Changelog">
+                    Changelog
+                </button>
+            </div>
+            
+            <div class="docs-content">
+                <div id="readme-content" class="doc-tab-content active">
+                    <div class="loading">Loading documentation...</div>
+                </div>
+                <div id="guide-content" class="doc-tab-content">
+                    <div class="loading">Loading guide...</div>
+                </div>
+                <div id="changelog-content" class="doc-tab-content">
+                    <div class="loading">Loading changelog...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 data-lang-en="Ready to organize your tournament?" data-lang-fr="Prêt à organiser votre tournoi ?">
+                Ready to organize your tournament?
+            </h2>
+            <a href="./app.html" class="btn-primary btn-large">
+                <span data-lang-en="Launch Tournament Pro" data-lang-fr="Lancer Tournament Pro">Launch Tournament Pro</span> →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>⚡ Tournament Pro</h3>
+                    <p data-lang-en="Free & Open Source" data-lang-fr="Gratuit & Open Source">Free & Open Source</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername/tournament-pro" target="_blank">GitHub</a>
+                    <a href="https://github.com/yourusername/tournament-pro/issues" target="_blank" data-lang-en="Report Bug" data-lang-fr="Signaler un Bug">Report Bug</a>
+                    <a href="./app.html" data-lang-en="Launch App" data-lang-fr="Lancer l'App">Launch App</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Tournament Pro. MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/landing.js"></script>
+</body>
+</html>
