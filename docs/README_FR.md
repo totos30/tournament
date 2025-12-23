@@ -4,10 +4,6 @@
 
 Tournament est une application web autonome qui permet d'organiser et de suivre des tournois sportifs ou e-sport avec une interface moderne et intuitive. 100% local, aucun serveur requis, aucune donnée collectée.
 
-![Tournament](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![No Server Required](https://img.shields.io/badge/server-none-orange)
-
 ## ✨ Fonctionnalités principales
 
 ### 🏆 Gestion complète de tournoi
