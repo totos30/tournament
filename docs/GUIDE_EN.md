@@ -103,11 +103,9 @@ Your customization is saved and persists between sessions.
 
 
 
-
 ## 🌐 Language
 
 Click the language selector (🇬🇧 EN / 🇫🇷 FR) in the top right to change the interface language.
-
 
 
 
