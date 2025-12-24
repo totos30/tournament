@@ -126,12 +126,12 @@ MIT License - Free to use, modify and distribute.
 
 ## 👨‍💻 Author
 
-Developed with passion by **Etienne**
+Developed with passion by [**Etienne**](https://www.linkedin.com/in/etienne-martos-605a0320/)
 
 ## 🙏 Acknowledgments
 
 Thanks to all users who will test and improve this tool!
 
----
+
 
 **⭐ If you find this tool useful, please share it!**
