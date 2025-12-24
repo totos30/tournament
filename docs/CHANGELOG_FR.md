@@ -1,6 +1,6 @@
 # Changelog
 
-Tous les changements notables de Tournament sont documentés dans ce fichier.
+Tous les changements notables de Tournament sont documentés dans ce fichier. 
 
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
