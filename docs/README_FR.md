@@ -125,12 +125,12 @@ MIT License - Libre d'utilisation, de modification et de distribution.
 
 ## 👨‍💻 Auteur
 
-Développé avec passion par **Etienne** - Chef de Projet Transversal AI & Data
+Développé avec passion par [**Etienne**](https://www.linkedin.com/in/etienne-martos-605a0320/)
 
 ## 🙏 Remerciements
 
 Merci à tous les utilisateurs qui testeront et amélioreront cet outil !
 
----
+
 
 **⭐ Si vous trouvez cet outil utile, n'hésitez pas à le partager !**
