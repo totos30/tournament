@@ -103,11 +103,9 @@ Votre personnalisation est sauvegardée et persiste entre les sessions.
 
 
 
-
 ## 🌐 Langue
 
 Cliquez sur le sélecteur de langue (🇬🇧 EN / 🇫🇷 FR) en haut à droite pour changer la langue de l'interface.
-
 
 
 
